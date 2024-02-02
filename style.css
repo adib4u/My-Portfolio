@@ -176,17 +176,20 @@ body {
     }
 }
 
-.services-head {
+.services-head,
+.contact-head {
     padding: 0px 20px;
     border-right: 5px solid #bbb;
     border-left: 5px solid #bbb;
 }
 
-.services {
+.services,
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px 50px;
 }
 
 .services-flex {
@@ -200,7 +203,7 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 242, 255, 0.394);
+    background-color: rgba(93, 190, 255, 0.394);
     padding: 20px 60px;
     margin: 20px;
     border-radius: 20px;
@@ -213,17 +216,48 @@ body {
     cursor: pointer;
 }
 
+.contact {
+    margin: 50px;
+}
+
+.contact>p {
+    margin: 0px 100px;
+}
+
 /* Footer */
 .footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
     margin-top: 50px;
     background-color: rgb(39, 39, 39);
 }
 
+.menu {
+    margin: 0px 50px;
+}
+
 .menu>ul>li {
-    width: 20%;
+    display: inline;
+    float: left;
+}
+
+.menu>ul>li:last-child {
+    float: right;
+}
+
+.menu>ul>li>a {
+    padding: 0px 10px;
 }
 
 .menu>ul>li>a:hover {
     background-color: #ffff;
     color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
