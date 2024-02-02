@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #ffff;
     background-color: rgb(92, 92, 92);
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -31,7 +33,8 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-.nav>ul {
+.nav>ul,
+.menu>ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -47,7 +50,8 @@ body {
     border-left: 1px solid #bbb;
 }
 
-.nav>ul>li>a {
+.nav>ul>li>a,
+.menu>ul>li>a {
     text-decoration: none;
     display: block;
     padding: 10px 20px;
@@ -55,7 +59,7 @@ body {
     transition: 0.3s;
 }
 
-li a:hover {
+.nav>ul>li>a:hover {
     background-color: #7b7b7b;
     cursor: pointer;
 }
@@ -65,7 +69,8 @@ li a:hover {
     flex-wrap: wrap;
 }
 
-section>div {
+.intro,
+.name {
     display: flex;
     flex: 1;
     height: 100vh;
@@ -169,4 +174,56 @@ section>div {
         background-position: 100% 50%;
         /* End position */
     }
+}
+
+.services-head {
+    padding: 0px 20px;
+    border-right: 5px solid #bbb;
+    border-left: 5px solid #bbb;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 242, 255, 0.394);
+    padding: 20px 60px;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    transition: 0.3s;
+}
+
+.service:hover {
+    margin: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    background-color: rgb(39, 39, 39);
+}
+
+.menu>ul>li {
+    width: 20%;
+}
+
+.menu>ul>li>a:hover {
+    background-color: #ffff;
+    color: rgb(0, 0, 0);
 }
